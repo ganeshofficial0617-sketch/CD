@@ -1,0 +1,21 @@
+{
+  "name": "Customer Details",
+  "short_name": "Customer Details",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#0b57d0",
+  "description": "Customer details entry and local storage app",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

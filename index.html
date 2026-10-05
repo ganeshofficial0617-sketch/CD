@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b57d0">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+<title>Customer Details</title>
+</head>
+<body>
+<header>
+  <div class="brand">CUSTOMER DETAILS</div>
+  <div class="sub">Customer information form</div>
+</header>
+<main>
+<form id="customerForm">
+<section><h2>Customer</h2>
+<label>Customer Name<input id="customerName" required></label>
+<label>Customer Number<input id="customerNumber" type="tel" inputmode="tel" required></label>
+<label>Nominee Name<input id="nomineeName"></label>
+<label>Nominee Number<input id="nomineeNumber" type="tel" inputmode="tel"></label>
+<label>Alternate Number<input id="alternateNumber" type="tel" inputmode="tel"></label>
+</section>
+
+<section><h2>Employment & Income</h2>
+<label>Job Details<textarea id="jobDetails" rows="3" placeholder="Company, designation, experience, etc."></textarea></label>
+<label>Monthly Income<input id="monthlyIncome" type="number" inputmode="decimal" min="0" placeholder="₹"></label>
+<label>Job Address<textarea id="jobAddress" rows="3"></textarea></label>
+</section>
+
+<section><h2>Customer Address</h2>
+<div class="choice">
+<label class="radio"><input type="radio" name="residence" value="Rent" checked> Rent</label>
+<label class="radio"><input type="radio" name="residence" value="Own"> Own</label>
+</div>
+<label>Customer Address<textarea id="customerAddress" rows="4"></textarea></label>
+</section>
+
+<section><h2>References</h2>
+<div class="ref"><h3>Reference 1</h3>
+<label>Name<input id="ref1Name"></label>
+<label>Number<input id="ref1Number" type="tel" inputmode="tel"></label>
+</div>
+<div class="ref"><h3>Reference 2</h3>
+<label>Name<input id="ref2Name"></label>
+<label>Number<input id="ref2Number" type="tel" inputmode="tel"></label>
+</div>
+</section>
+
+<div class="actions">
+<button type="submit">Save Customer</button>
+<button type="button" class="secondary" id="clearBtn">Clear Form</button>
+</div>
+</form>
+
+<section id="savedSection" class="saved"><h2>Saved Customers</h2><div id="savedList"></div></section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
